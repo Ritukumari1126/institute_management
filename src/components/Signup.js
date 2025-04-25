@@ -48,9 +48,9 @@ const Signup = () => {
                 <input onChange={(e)=>{setConfirmPassword(e.target.value)}} required type='password' placeholder='Confirm Password'/>
                 <input onChange={(e)=>{setPhone(e.target.value)}} required placeholder='Phone'/>
                 {password.length>0 && confirmPassword.length>0 && confirmPassword != password &&  <p className='error-msg-lines'>Password and Confirm Password is not same </p>}
-                <input onChange={fileHandler} type='file'/>
+                <input style={{display: "none"}} id='input-file' onChange={fileHandler} type='file'/>
                 <div className='upload-profile'>
-                  <button className='upload-profile-btn'>upload profile pic</button>
+                  <button onClick={()=>{document.getElementById("input-file").click()}} className='upload-profile-btn'>upload profile pic</button>
                   {imageUrl == null?<img alt='profile pic' src={require('../assets/profile.png')}/>
                   :<img alt='profile pic' src={imageUrl}/>}
                   

@@ -165,3 +165,61 @@
     background-color:rgb(221, 9, 119);
 }
 
+.menu-active-link{
+    background-color:rgb(221, 9, 119);
+}
+
+.fa-solid{
+    margin-right: 5px !important;
+}
+/*--------------Add courses------------------------------------------------------------------------------------------*/
+
+.add-courses{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-courses form{
+    width: 70%;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    
+    /*align-items: center;*/
+    flex-direction: column;
+    gap: 10px;
+    min-height: 70vh;
+   
+    
+}
+.add-courses form input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #eee;
+    font-size: 15px;
+}
+
+.add-courses form button{
+   
+}
+
+.upload-thumbnail-pic button{
+    background-color: antiquewhite;
+}
+
+.submit-btn{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(221, 9, 119);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+
